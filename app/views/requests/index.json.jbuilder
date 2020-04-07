@@ -3,6 +3,7 @@ json.array! @requests do |request|
     json.status  request.status
     json.branch_id request.branch_id
     json.product_id request.product_id
+    json.quantity request.quantity
     json.price request.price
     json.created_at request.created_at
     

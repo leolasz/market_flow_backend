@@ -40,6 +40,6 @@ class RequestsController < ApplicationController
 #Private Methods
   private
    def request_params
-     params.require(:request).permit(:status, :created_at, :branch_id, :product_id)
+     params.require(:request).permit(:status, :created_at, :branch_id, :product_id, :price, :created_at)
    end
 end

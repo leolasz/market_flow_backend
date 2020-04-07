@@ -17,27 +17,27 @@ puts "#{ User.count } users created"
 
 Product.destroy_all
 p1 = Product.create :item => "Milk" , :price => 3.59 , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/8/1/5/8150288-th.jpg"
-p2 = Product.create :item => "Apples" , :price => "1" , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/5/8/9/5899409-th.jpg"
-p3 = Product.create :item => "Bananas" , :price => "3" , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/2/5/1/2511791-th.jpg"
-p4 = Product.create :item => "Carrot" , :price => "2" , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/3/6/0/3609392-th.jpg"
-p5 = Product.create :item => "Potatoes" , :price => "8" , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/4/2/1/4213819-th.jpg"
-p6 = Product.create :item => "Apple Juice" , :price => "2:30" , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/8/7/5/8756135-th.jpg"
-p7 = Product.create :item => "Orange Juice" , :price => "7.50" , :image => "https://shop.coles.com.au/wcsstore/Coles-CAS/images/7/0/0/7009375-th.jpg"
-p8 = Product.create :item => "Biscuits" , :price => "3" , :image => "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReysbkX5po1cX08lu_ylCDrIthVpoa3ZMX69IHwL8PazJhfeAO&usqp=CAU"
-p9 = Product.create :item => "Bread" , :price => "2.50" , :image => "https://www.browneyedbaker.com/wp-content/uploads/2016/05/white-bread-53-600.jpg"
-p10 = Product.create :item => "Eggs" , :price => "3.50" , :image => "https://shop.coles.com.au/wcsstore/Coles-CAS/images/2/9/1/2915961.jpg"
+p2 = Product.create :item => "Apples" , :price => 1.00 , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/5/8/9/5899409-th.jpg"
+p3 = Product.create :item => "Bananas" , :price => 2.00 , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/2/5/1/2511791-th.jpg"
+p4 = Product.create :item => "Carrot" , :price => 3.00 , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/3/6/0/3609392-th.jpg"
+p5 = Product.create :item => "Potatoes" , :price => 4.00 , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/4/2/1/4213819-th.jpg"
+p6 = Product.create :item => "Apple Juice" , :price => 5.00 , :image => "https://shop.coles.com.au/wcsstore/GoGrocery-CAS/images/8/7/5/8756135-th.jpg"
+p7 = Product.create :item => "Orange Juice" , :price => 6.00 , :image => "https://shop.coles.com.au/wcsstore/Coles-CAS/images/7/0/0/7009375-th.jpg"
+p8 = Product.create :item => "Biscuits" , :price => 7.00 , :image => "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReysbkX5po1cX08lu_ylCDrIthVpoa3ZMX69IHwL8PazJhfeAO&usqp=CAU"
+p9 = Product.create :item => "Bread" , :price => 8.00 , :image => "https://www.browneyedbaker.com/wp-content/uploads/2016/05/white-bread-53-600.jpg"
+p10 = Product.create :item => "Eggs" , :price => 9.00 , :image => "https://shop.coles.com.au/wcsstore/Coles-CAS/images/2/9/1/2915961.jpg"
 puts "#{ Product.count } Products created"
 
 
 Request.destroy_all
-r1 = Request.create :branch_id => 1, :product_id => 1, :created_at => 'April 1th 2020'
-r2 = Request.create :branch_id => 1, :product_id => 2, :created_at => 'April 1th 2020'
-r3 = Request.create :branch_id => 1, :product_id => 3, :created_at => 'April 1th 2020'
-r4 = Request.create :branch_id => 1, :product_id => 1, :created_at => 'April 3th 2020'
-r5 = Request.create :branch_id => 2, :product_id => 1, :created_at => 'April 1th 2020'
-r6 = Request.create :branch_id => 2, :product_id => 2, :created_at => 'April 1th 2020'
-r7 = Request.create :branch_id => 2, :product_id => 3, :created_at => 'April 1th 2020'
-r8 = Request.create :branch_id => 2, :product_id => 1, :created_at => 'April 3th 2020'
+r1 = Request.create :branch_id => 1, :product_id => 1,:quantity => 10,:price => 3.59 ,:created_at => 'April 1th 2020'
+r2 = Request.create :branch_id => 1, :product_id => 2,:quantity => 10,:price => 1.00 , :created_at => 'April 1th 2020'
+r3 = Request.create :branch_id => 1, :product_id => 3,:quantity => 10,:price => 2.00 , :created_at  => 'April 1th 2020'
+r4 = Request.create :branch_id => 1, :product_id => 1,:quantity => 10,:price => 3.00 , :created_at  => 'April 3th 2020'
+r5 = Request.create :branch_id => 2, :product_id => 2,:quantity => 10,:price => 4.00 , :created_at => 'April 1th 2020'
+r6 = Request.create :branch_id => 2, :product_id => 2,:quantity => 10,:price => 5.00 , :created_at => 'April 1th 2020'
+r7 = Request.create :branch_id => 2, :product_id => 3,:quantity => 10,:price => 6.00 , :created_at  => 'April 1th 2020'
+r8 = Request.create :branch_id => 2, :product_id => 1,:quantity => 10,:price => 7.00 , :created_at  => 'April 3th 2020'
 puts "#{ Request.count } requests created"
 
 # Associations ###############

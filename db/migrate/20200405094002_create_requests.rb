@@ -4,6 +4,7 @@ class CreateRequests < ActiveRecord::Migration[5.2]
       t.string "status", default: "OPEN"
       t.integer "branch_id", null: false
       t.integer "product_id", null: false
+      t.integer "quantity", null: false
       t.float   "price"
       t.datetime "created_at", null: false
     end

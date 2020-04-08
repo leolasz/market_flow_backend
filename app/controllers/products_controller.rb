@@ -10,9 +10,11 @@ class ProductsController < ApplicationController
 
   #Create product
   def create
-   product  = Product.create
-   product_params
-   redirect_to product
+    # @product = Product.new params [:id]
+    product = Product.create product_params
+redirect_to product
+
+
   end
 
 #Edit product

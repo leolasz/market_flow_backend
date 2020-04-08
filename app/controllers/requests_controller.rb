@@ -10,8 +10,7 @@ class RequestsController < ApplicationController
   end
 
   def create
-    request  = Request.create
-    request_params
+    request = Request.create request_params
     redirect_to request
   end
 

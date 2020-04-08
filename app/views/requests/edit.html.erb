@@ -1,2 +1,4 @@
-<h1>Requests#edit</h1>
-<%= render :partial => 'form' %>
+<%= render 'form', request: @request %>
+
+<%= link_to 'Show', @request %> |
+<%= link_to 'Back', requests_path %>

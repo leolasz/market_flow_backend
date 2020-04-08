@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 2020_04_05_094002) do
 
   create_table "requests", force: :cascade do |t|
     t.string "status", default: "OPEN"
-    t.integer "branch_id", null: false
+    t.text "branch_id", null: false
     t.integer "product_id", null: false
-    t.integer "quantity", null: false
+    t.integer "quantity", 
     t.float "price"
     t.datetime "created_at", null: false
   end

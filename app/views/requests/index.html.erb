@@ -1,2 +1,10 @@
 <h1>Requests#index</h1>
-<p>Find me in app/views/requests/index.html.erb</p>
+
+<% @requests.each do |request| %>
+<%= request.branch_id%>
+<%= request.product_id%>
+<%= request.quantity%>
+<%= request.price%>
+<%= request.status%>
+<%= request.created_at%><br/>
+<% end %>

@@ -1,6 +1,8 @@
 class RequestsController < ApplicationController
   def index
     @requests = Request.all
+    # @requests = Request.find_by :branch_id => params[:branch_id]
+    render json: @requests
   end
 
   def new
@@ -33,13 +35,13 @@ class RequestsController < ApplicationController
 #Delete request
   def destroy
     request = Request.find params[:id]
-    Request.destroy
-    redirect_to requests_path
+    request.destroy
+    render json: Request
   end
 
 #Private Methods
   private
    def request_params
-     params.require(:request).permit(:status, :created_at, :branch_id, :product_id, :price, :created_at)
+     params.require(:request).permit(:status, :created_at, :branch_id, :product_id, :price, :quantity)
    end
 end

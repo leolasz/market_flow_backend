@@ -6,6 +6,4 @@ json.array! @requests do |request|
     json.quantity request.quantity
     json.price request.price
     json.created_at request.created_at
-    
   end
-  

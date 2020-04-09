@@ -1,10 +1,10 @@
 
 Branch.destroy_all
-b1 =  Branch.create :branch_name => "GoGrocery Blacktown", :location => "Blacktown", :email => "blacktowngogrocery", :contact => "0405060708"
-b2 =  Branch.create :branch_name => "GoGrocery Complex", :location => "Lalor Park", :email => "lalorparkgogrocery", :contact => "0405011234"
-b3 =  Branch.create :branch_name => "GoGrocery CentroMall", :location => "Seven Hills", :email => "sevenhillsgogrocery", :contact => "0402340708"
-b4 =  Branch.create :branch_name => "GoGrocery Westfield", :location => "Paramatta", :email => "paramattagogrocery", :contact => "0405060111"
-b5 =  Branch.create :branch_name => "GoGrocery ", :location => "Quakers Hills", :email => "quakerhillsgogrocery", :contact => "0405345678"
+b1 =  Branch.create :branch_name => "GoGrocery Blacktown", :location => "Blacktown", :email => "blacktown@gogrocery.com", :contact => "0405060708"
+b2 =  Branch.create :branch_name => "GoGrocery Complex", :location => "Lalor Park", :email => "lalorpark@gogrocery.com", :contact => "0405011234"
+b3 =  Branch.create :branch_name => "GoGrocery CentroMall", :location => "Seven Hills", :email => "sevenhills@gogrocery.com", :contact => "0402340708"
+b4 =  Branch.create :branch_name => "GoGrocery Westfield", :location => "Paramatta", :email => "paramatta@gogrocery.com", :contact => "0405060111"
+b5 =  Branch.create :branch_name => "GoGrocery ", :location => "Quakers Hills", :email => "quakerhills@gogrocery.com", :contact => "0405345678"
 
 puts "#{ Branch.count } Branches created"
 

@@ -1,7 +1,7 @@
 class RequestsController < ApplicationController
   def index
     @requests = Request.all
-    # @requests = Request.find_by :branch_id => params[:branch_id]
+    # @requests = Request.find_by :branch_id => params[:branch_name]
     render json: @requests
   end
 
@@ -12,6 +12,7 @@ class RequestsController < ApplicationController
   def create
     request = Request.create request_params
     redirect_to request
+    
   end
 
   #Edit request

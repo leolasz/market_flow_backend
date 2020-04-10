@@ -27,6 +27,7 @@ post '/login' => 'session#create'
 resources :branches
 resources :products
 resources :requests
+resources :users
 
 post '/requests/create' => 'requests#create'
 post '/products/create' => 'products#create'

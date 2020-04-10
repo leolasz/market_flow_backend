@@ -29,4 +29,6 @@ resources :products
 resources :requests
 
 post '/requests/create' => 'requests#create'
+post '/products/create' => 'products#create'
+post '/branches/create' => 'branches#create'
 end

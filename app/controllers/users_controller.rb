@@ -6,7 +6,8 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    # @users = User.find_by :email => params[:email]
+    # user = User.find_by :email => params[:email]
+
     # if user.present? && user.authenticate(params[:password])
     #   render json: user
     #   # session[:user_id] = user.id # Log the user in

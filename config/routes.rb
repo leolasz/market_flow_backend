@@ -27,7 +27,13 @@ post '/login' => 'session#create'
 resources :branches
 resources :products
 resources :requests
+resources :users
 
 post '/requests/create' => 'requests#create'
+
 post '/requests/:id/update' => 'requests#update'
+
+post '/products/create' => 'products#create'
+post '/branches/create' => 'branches#create'
+
 end

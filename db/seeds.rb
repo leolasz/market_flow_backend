@@ -10,8 +10,8 @@ puts "#{ Branch.count } Branches created"
 
 
 User.destroy_all
-u1 = User.create :name => "Leo", :email => "leo@ga.co", :password => "chicken", :admin => true
-u2 = User.create :name => "Kuljit", :email => "kuljit@ga.co", :password => "chicken", :admin => true
+u1 = User.create :name => "Leo", :email => "leo@ga.com", :password => "chicken", :admin => true
+u2 = User.create :name => "Kuljit", :email => "kuljit@ga.com", :password => "chicken", :admin => true
 puts "#{ User.count } users created"
 
 

@@ -26,4 +26,5 @@ get '/login' => 'session#new'
 resources :branches
 resources :products
 resources :requests
+post '/requests/create' => 'requests#create'
 end

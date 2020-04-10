@@ -10,11 +10,8 @@ class ProductsController < ApplicationController
 
   #Create product
   def create
-    # @product = Product.new params [:id]
     product = Product.create product_params
-redirect_to product
-
-
+    render json: product
   end
 
 #Edit product
@@ -25,8 +22,8 @@ redirect_to product
 #Update product
   def update
     product = Product.find params[:id]
-    Product.update product_params
-    redirect_to product
+    product.update product_params
+    render json: product
   end
 
 #Show product
@@ -37,8 +34,8 @@ redirect_to product
 #Delete product
   def destroy
     product = Product.find params[:id]
-    Product.destroy
-    redirect_to products_path
+    product.destroy
+    render json: Product
   end
 
 #Private Methods

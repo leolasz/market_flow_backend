@@ -11,8 +11,7 @@ class RequestsController < ApplicationController
 
   def create
     request = Request.create request_params
-    redirect_to request
-    
+    render json: request
   end
 
   #Edit request
@@ -23,8 +22,8 @@ class RequestsController < ApplicationController
 #Update request
   def update
     request = Request.find params[:id]
-    Request.update request_params
-    redirect_to request
+    request.update request_params
+    render json: request
   end
 
 #Show request

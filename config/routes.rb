@@ -29,4 +29,5 @@ resources :products
 resources :requests
 
 post '/requests/create' => 'requests#create'
+post '/requests/:id/update' => 'requests#update'
 end

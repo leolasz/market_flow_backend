@@ -30,10 +30,11 @@ resources :requests
 resources :users
 
 post '/requests/create' => 'requests#create'
-
-post '/requests/:id/update' => 'requests#update'
-
 post '/products/create' => 'products#create'
 post '/branches/create' => 'branches#create'
+post '/requests/:id/update' => 'requests#update'
+post '/branches/:id/update' => 'branches#update'
+post '/products/:id/update' => 'products#update'
+
 
 end

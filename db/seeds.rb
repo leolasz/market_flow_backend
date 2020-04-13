@@ -30,14 +30,14 @@ puts "#{ Product.count } Products created"
 
 
 Request.destroy_all
-r1 = Request.create :branch_id => 1, :product_id => 1,:quantity => 10,:price => 3.59 ,:created_at => 'April 1th 2020'
-r2 = Request.create :branch_id => 1, :product_id => 2,:quantity => 10,:price => 1.00 , :created_at => 'April 1th 2020'
-r3 = Request.create :branch_id => 1, :product_id => 3,:quantity => 10,:price => 2.00 , :created_at  => 'April 1th 2020'
-r4 = Request.create :branch_id => 1, :product_id => 1,:quantity => 10,:price => 3.00 , :created_at  => 'April 3th 2020'
-r5 = Request.create :branch_id => 2, :product_id => 2,:quantity => 10,:price => 4.00 , :created_at => 'April 1th 2020'
-r6 = Request.create :branch_id => 2, :product_id => 2,:quantity => 10,:price => 5.00 , :created_at => 'April 1th 2020'
-r7 = Request.create :branch_id => 2, :product_id => 3,:quantity => 10,:price => 6.00 , :created_at  => 'April 1th 2020'
-r8 = Request.create :branch_id => 2, :product_id => 1,:quantity => 10,:price => 7.00 , :created_at  => 'April 3th 2020'
+r1 = Request.create :branch_id => 1,:branch_name =>"GoGrocery Blacktown", :product_id => 1,:item => "Milk" ,:quantity => 10,:price => 3.59 ,:created_at => 'April 1th 2020'
+r2 = Request.create :branch_id => 1, :branch_name =>"GoGrocery Blacktown", :product_id => 2,:item => "Apples" ,:quantity => 10,:price => 1.00 , :created_at => 'April 1th 2020'
+r3 = Request.create :branch_id => 1,:branch_name =>"GoGrocery Blacktown", :product_id => 3,:item => "Bananas" ,:quantity => 10,:price => 2.00 , :created_at  => 'April 1th 2020'
+r4 = Request.create :branch_id => 1,:branch_name =>"GoGrocery Blacktown", :product_id => 1,:item => "Milk" ,:quantity => 10,:price => 3.00 , :created_at  => 'April 3th 2020'
+r5 = Request.create :branch_id => 2,:branch_name => "GoGrocery Complex", :product_id => 2,:item => "Apples" ,:quantity => 10,:price => 4.00 , :created_at => 'April 1th 2020'
+r6 = Request.create :branch_id => 2,:branch_name => "GoGrocery Complex", :product_id => 2,:item => "Apples" ,:quantity => 10,:price => 5.00 , :created_at => 'April 1th 2020'
+r7 = Request.create :branch_id => 2,:branch_name => "GoGrocery Complex", :product_id => 3,:item => "Bananas" ,:quantity => 10,:price => 6.00 , :created_at  => 'April 1th 2020'
+r8 = Request.create :branch_id => 2,:branch_name => "GoGrocery Complex", :product_id => 1,:item => "Milk" ,:quantity => 10,:price => 7.00 , :created_at  => 'April 3th 2020'
 puts "#{ Request.count } requests created"
 
 # Associations ###############

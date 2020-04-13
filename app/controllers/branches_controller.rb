@@ -2,7 +2,7 @@ class BranchesController < ApplicationController
 
   def index
     @branches = Branch.all
-    # @branches = Branch.find_by :user_id => params[:user_id]
+    # @branches = Branch.find_by :user_id => @current_user
     render json: @branches
   end
 
